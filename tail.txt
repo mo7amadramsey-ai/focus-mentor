@@ -1,0 +1,110 @@
+
+::group::✅ Passing tests
+✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: Pool never exceeds its limit and finishes everything
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: classifyUrl by extension
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: classifyUrl by Moodle module
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: classifyUrl external
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: normalizeUrl resolves, drops fragments, rejects non-http
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCourseLinks unique by id, longest title wins
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage title and sections
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage activity names have hidden text removed
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage week 1 items
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage nav, availability restrictions and footer links are ignored
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage section pages of the same course are detected
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage page without section markup still yields one section
+✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: crawls a course tree, resolving files, folders, urls and pages
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: other pages folder files
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: other pages page links include embedded media but not the page itself
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: other pages book chapters
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: other pages URL activity target and resource target
+✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: a failing page is retried once, recorded, and does not stop the crawl
+✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: model json tree round-trips
+✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: never requests other sites
+✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: every page is requested at most once per attempt (no duplicates)
+✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: requests run in parallel but stay under the concurrency limit
+✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: several courses are crawled at the same time
+✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: section pages are merged into the course
+::endgroup::
+
+🎉 24 tests passed.
+======
+[===========                            ] 29% Downloading android-ndk-r28c-linux
+[===========                            ] 30% Downloading android-ndk-r28c-linux
+[============                           ] 30% Downloading android-ndk-r28c-linux
+[============                           ] 31% Downloading android-ndk-r28c-linux
+[============                           ] 32% Downloading android-ndk-r28c-linux
+[============                           ] 33% Downloading android-ndk-r28c-linux
+[============                           ] 33% Unzipping...                      
+[============                           ] 33% Unzipping... android-ndk-r28c/    
+[============                           ] 33% Unzipping... android-ndk-r28c/READ
+[=============                          ] 33% Unzipping... android-ndk-r28c/READ
+[=============                          ] 33% Unzipping... android-ndk-r28c/meta
+[=============                          ] 33% Unzipping... android-ndk-r28c/shad
+[=============                          ] 33% Unzipping... android-ndk-r28c/ndk-
+[=============                          ] 33% Unzipping... android-ndk-r28c/wrap
+[=============                          ] 33% Unzipping... android-ndk-r28c/ndk-
+[=============                          ] 33% Unzipping... android-ndk-r28c/tool
+[=============                          ] 34% Unzipping... android-ndk-r28c/tool
+[=============                          ] 35% Unzipping... android-ndk-r28c/tool
+[==============                         ] 35% Unzipping... android-ndk-r28c/tool
+[==============                         ] 36% Unzipping... android-ndk-r28c/tool
+[==============                         ] 37% Unzipping... android-ndk-r28c/tool
+[===============                        ] 38% Unzipping... android-ndk-r28c/tool
+[===============                        ] 39% Unzipping... android-ndk-r28c/tool
+[===============                        ] 40% Unzipping... android-ndk-r28c/tool
+[================                       ] 40% Unzipping... android-ndk-r28c/tool
+[================                       ] 41% Unzipping... android-ndk-r28c/tool
+[================                       ] 42% Unzipping... android-ndk-r28c/tool
+[=================                      ] 43% Unzipping... android-ndk-r28c/tool
+[=================                      ] 44% Unzipping... android-ndk-r28c/tool
+[=================                      ] 45% Unzipping... android-ndk-r28c/tool
+[==================                     ] 45% Unzipping... android-ndk-r28c/tool
+[==================                     ] 46% Unzipping... android-ndk-r28c/tool
+[==================                     ] 47% Unzipping... android-ndk-r28c/tool
+[===================                    ] 48% Unzipping... android-ndk-r28c/tool
+[===================                    ] 49% Unzipping... android-ndk-r28c/tool
+[===================                    ] 50% Unzipping... android-ndk-r28c/tool
+[====================                   ] 50% Unzipping... android-ndk-r28c/tool
+[====================                   ] 51% Unzipping... android-ndk-r28c/tool
+[====================                   ] 52% Unzipping... android-ndk-r28c/tool
+[=====================                  ] 53% Unzipping... android-ndk-r28c/tool
+[=====================                  ] 54% Unzipping... android-ndk-r28c/tool
+[=====================                  ] 54% Unzipping... android-ndk-r28c/buil
+[=====================                  ] 54% Unzipping... android-ndk-r28c/sour
+[=====================                  ] 54% Unzipping... android-ndk-r28c/NOTI
+[=====================                  ] 54% Unzipping... android-ndk-r28c/ndk-
+[=====================                  ] 54% Unzipping... android-ndk-r28c/NOTI
+[=====================                  ] 54% Unzipping... android-ndk-r28c/pyth
+[=====================                  ] 54% Unzipping... android-ndk-r28c/preb
+[=====================                  ] 54% Unzipping... android-ndk-r28c/ndk-
+[=====================                  ] 54% Unzipping... android-ndk-r28c/sour
+[=====================                  ] 54% Unzipping... android-ndk-r28c/simp
+[=====================                  ] 55% Unzipping... android-ndk-r28c/simp
+[=====================                  ] 55% Unzipping... android-ndk-r28c/CHAN
+[=======================================] 100% Unzipping... android-ndk-r28c/CHA
+
+Font asset "MaterialIcons-Regular.otf" was tree-shaken, reducing it from 1645184 to 4344 bytes (99.7% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processReleaseResources' (registered by plugin 'com.android.internal.application').
+> A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+   > Android resource linking failed
+     ERROR: AAPT: error: resource style/Theme.AppCompat.DayNight.NoActionBar (aka com.mohammed.focus_mentor:style/Theme.AppCompat.DayNight.NoActionBar) not found.
+     error: resource style/Theme.AppCompat.DayNight.NoActionBar (aka com.mohammed.focus_mentor:style/Theme.AppCompat.DayNight.NoActionBar) not found.
+     error: resource style/Theme.AppCompat.DayNight.NoActionBar (aka com.mohammed.focus_mentor:style/Theme.AppCompat.DayNight.NoActionBar) not found.
+     error: resource style/Theme.AppCompat.DayNight.NoActionBar (aka com.mohammed.focus_mentor:style/Theme.AppCompat.DayNight.NoActionBar) not found.
+     error: failed linking references.
+
+
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2m 58s
+Running Gradle task 'assembleRelease'...                          179.0s
+Gradle task assembleRelease failed with exit code 1

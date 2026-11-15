@@ -1,0 +1,31 @@
+3:✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: Pool never exceeds its limit and finishes everything
+4:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: classifyUrl by extension
+5:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: classifyUrl by Moodle module
+6:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: classifyUrl external
+7:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: normalizeUrl resolves, drops fragments, rejects non-http
+8:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCourseLinks unique by id, longest title wins
+9:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage title and sections
+10:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage activity names have hidden text removed
+11:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage week 1 items
+12:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage nav, availability restrictions and footer links are ignored
+13:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage section pages of the same course are detected
+14:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: parseCoursePage page without section markup still yields one section
+15:✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: crawls a course tree, resolving files, folders, urls and pages
+16:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: other pages folder files
+17:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: other pages page links include embedded media but not the page itself
+18:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: other pages book chapters
+19:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: other pages URL activity target and resource target
+20:✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: a failing page is retried once, recorded, and does not stop the crawl
+21:✅ /home/runner/work/focus-mentor/focus-mentor/test/parser_test.dart: model json tree round-trips
+22:✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: never requests other sites
+23:✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: every page is requested at most once per attempt (no duplicates)
+24:✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: requests run in parallel but stay under the concurrency limit
+25:✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: several courses are crawled at the same time
+26:✅ /home/runner/work/focus-mentor/focus-mentor/test/crawler_test.dart: section pages are merged into the course
+125:FAILURE: Build failed with an exception.
+127:* What went wrong:
+131:     ERROR: AAPT: error: resource style/Theme.AppCompat.DayNight.NoActionBar (aka com.mohammed.focus_mentor:style/Theme.AppCompat.DayNight.NoActionBar) not found.
+132:     error: resource style/Theme.AppCompat.DayNight.NoActionBar (aka com.mohammed.focus_mentor:style/Theme.AppCompat.DayNight.NoActionBar) not found.
+133:     error: resource style/Theme.AppCompat.DayNight.NoActionBar (aka com.mohammed.focus_mentor:style/Theme.AppCompat.DayNight.NoActionBar) not found.
+134:     error: resource style/Theme.AppCompat.DayNight.NoActionBar (aka com.mohammed.focus_mentor:style/Theme.AppCompat.DayNight.NoActionBar) not found.
+135:     error: failed linking references.
