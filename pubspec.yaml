@@ -1,0 +1,21 @@
+name: focus_mentor
+description: Focus Mentor - Focus Lock strict mode plus an automatic study planner (no AI).
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  video_player: ^2.8.0            # local video playback
+  wakelock_plus: ^1.2.0           # keep the screen on
+  webview_flutter: ^4.9.0         # YouTube-only browser
+  youtube_explode_dart: ^2.3.0    # download videos
+  path_provider: ^2.1.0           # app storage folder
+  pdfx: ^2.9.2                    # in-app PDF viewer
+  archive: ^3.6.1                 # read docx/pptx/xlsx
+  local_auth: ^2.3.0              # app lock (fingerprint / phone PIN)
+  file_picker: ^10.3.0             # import documents from the phone
+  webview_flutter_android: any    # fullscreen video inside web pages
+flutter:
+  uses-material-design: true
