@@ -93,8 +93,9 @@ class Crawler {
     FetchResult? r;
     try {
       for (var attempt = 0; attempt < 2; attempt++) {
-        r = await _pool.run(() => fetch(url));
-        if (r.ok) break;
+        final res = await _pool.run<FetchResult>(() => fetch(url));
+        r = res;
+        if (res.ok) break;
       }
     } catch (e) {
       r = FetchResult(status: 0, finalUrl: url, error: '$e');
