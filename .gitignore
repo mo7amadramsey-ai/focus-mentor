@@ -7,5 +7,4 @@ build/
 pubspec.lock
 *.iml
 .metadata
-test/
 analysis_options.yaml

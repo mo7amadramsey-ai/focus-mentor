@@ -18,6 +18,10 @@ jobs:
       # Overlay our native code, manifest and resources
       - run: cp -r android_overlay/* android/
       - run: flutter pub get
+      # Unit tests for the parser + crawler (pure Dart, no device needed)
+      - name: Test
+        run: flutter test test/parser_test.dart test/crawler_test.dart 2>&1 | tee test.log
+        shell: bash
       - name: Build APK
         run: flutter build apk --release --build-number=${{ github.run_number }} 2>&1 | tee build.log
         shell: bash
@@ -40,8 +44,9 @@ jobs:
         if: failure()
         run: |
           mkdir /tmp/bl
-          grep -nE "Error|error:|FAILURE|What went wrong|lib/" build.log | head -80 > /tmp/bl/errors.txt || true
-          tail -n 120 build.log > /tmp/bl/tail.txt || true
+          touch test.log build.log
+          cat test.log build.log | grep -nE "Error|error:|FAILURE|What went wrong|lib/|test/|Expected|Actual|EXCEPTION|Some tests failed" | head -120 > /tmp/bl/errors.txt || true
+          { tail -n 80 test.log; echo ======; tail -n 80 build.log; } > /tmp/bl/tail.txt || true
           git config user.name github-actions
           git config user.email actions@github.com
           git checkout --orphan buildlog

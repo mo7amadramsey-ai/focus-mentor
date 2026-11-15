@@ -1,81 +1,64 @@
 import 'package:flutter/material.dart';
 
-// Shared look of the whole app (dark, calm, red accent)
-const kAccent = Color(0xFFFF4D4D);
-const kBg = Color(0xFF0E0E10);
-const kSurface = Color(0xFF1A1A1D);
-const kSurface2 = Color(0xFF26262A);
-const kOutline = Color(0xFF2E2E33);
+// Calm palette: light brown + beige + olive
+const kBg = Color(0xFFF4ECDC);       // beige
+const kSurface = Color(0xFFFBF6EA);  // light beige card
+const kSurface2 = Color(0xFFEADFC8); // deeper beige
+const kBrown = Color(0xFFA9855F);    // light brown (primary)
+const kBrownDark = Color(0xFF4B3B2A);// text
+const kOlive = Color(0xFF7B8450);    // olive accent
+const kOutline = Color(0xFFDCCFB4);
 
 ThemeData buildTheme() {
-  final base = ThemeData.dark(useMaterial3: true);
-  final shape24 = RoundedRectangleBorder(borderRadius: BorderRadius.circular(24));
-  return base.copyWith(
+  final scheme = ColorScheme.fromSeed(seedColor: kBrown, brightness: Brightness.light).copyWith(
+    primary: kBrown,
+    onPrimary: Colors.white,
+    secondary: kOlive,
+    onSecondary: Colors.white,
+    surface: kSurface,
+    onSurface: kBrownDark,
+    outline: kOutline,
+  );
+  final shape = RoundedRectangleBorder(borderRadius: BorderRadius.circular(22));
+  return ThemeData(
+    useMaterial3: true,
+    colorScheme: scheme,
     scaffoldBackgroundColor: kBg,
-    colorScheme: const ColorScheme.dark(
-      primary: kAccent,
-      secondary: kAccent,
-      surface: kSurface,
-      surfaceContainerHighest: kSurface2,
-    ),
     appBarTheme: const AppBarTheme(
       backgroundColor: kBg,
+      foregroundColor: kBrownDark,
       elevation: 0,
       scrolledUnderElevation: 0,
       centerTitle: false,
-      titleTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.w700, color: Colors.white),
+      titleTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.w700, color: kBrownDark),
     ),
     filledButtonTheme: FilledButtonThemeData(
       style: FilledButton.styleFrom(
-        backgroundColor: kAccent,
+        backgroundColor: kOlive,
         foregroundColor: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-        shape: shape24,
+        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 14),
+        shape: shape,
         textStyle: const TextStyle(fontWeight: FontWeight.w700),
       ),
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
-        foregroundColor: Colors.white,
+        foregroundColor: kBrownDark,
         side: const BorderSide(color: kOutline),
         padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-        shape: shape24,
+        shape: shape,
       ),
-    ),
-    chipTheme: ChipThemeData(
-      backgroundColor: kSurface2,
-      selectedColor: kAccent.withOpacity(.25),
-      side: BorderSide.none,
-      shape: const StadiumBorder(),
-      labelStyle: const TextStyle(color: Colors.white),
-    ),
-    dialogTheme: DialogThemeData(
-      backgroundColor: kSurface,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-    ),
-    bottomSheetTheme: const BottomSheetThemeData(
-      backgroundColor: kSurface,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(28))),
     ),
     snackBarTheme: SnackBarThemeData(
       behavior: SnackBarBehavior.floating,
-      backgroundColor: kSurface2,
+      backgroundColor: kBrownDark,
+      contentTextStyle: const TextStyle(color: Colors.white),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
     ),
-    inputDecorationTheme: InputDecorationTheme(
-      filled: true,
-      fillColor: kSurface2,
-      border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
-    ),
-    floatingActionButtonTheme: const FloatingActionButtonThemeData(
-      backgroundColor: kAccent,
-      foregroundColor: Colors.white,
-    ),
-    listTileTheme: const ListTileThemeData(iconColor: kAccent),
+    dividerColor: kOutline,
   );
 }
 
-/// Rounded card used by lists everywhere
 BoxDecoration cardBox([double r = 18]) => BoxDecoration(
       color: kSurface,
       borderRadius: BorderRadius.circular(r),
